@@ -20,9 +20,9 @@ export const SectorDataProvider = ({ children }) => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000';
-            const consumerKey = process.env.NEXT_PUBLIC_WC_CONSUMER_KEY || 'your_consumer_key';
-            const consumerSecret = process.env.NEXT_PUBLIC_WC_CONSUMER_SECRET || 'your_consumer_secret';
+            const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+            const consumerKey = process.env.NEXT_PUBLIC_WC_CONSUMER_KEY;
+            const consumerSecret = process.env.NEXT_PUBLIC_WC_CONSUMER_SECRET;
 
             try {
                 // Fetch pages and products data
